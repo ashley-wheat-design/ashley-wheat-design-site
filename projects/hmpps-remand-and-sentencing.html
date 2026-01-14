@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Wheat – User Centred Design</title>
+  <meta name="description"
+    content="Ashley Wheat is a User Centred Design consultant specialising in accessible, inclusive UX, research-led design, and ethical digital practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Android / PWA -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Theme colour -->
+  <meta name="theme-color" content="#A34232">
+  <meta name="msapplication-TileColor" content="#A34232">
+</head>
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (isOpen) {
+        const firstLink = nav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        toggle.focus();
+      }
+    });
+  })();
+</script>
+
+<body>
+
+  <header>
+    <div class="grid-container">
+      <section class="grid-row grid-1-2">
+        <div class="grid-col">
+          <a class="logo" href="../">Ashley Wheat</a>
+        </div>
+        <div class="grid-col header-right">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="../#selected-work">Selected work</a></li>
+              <li><a href="../#what-i-do">What I do</a></li>
+              <li><a href="../#about">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu toggle -->
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <article class="grid-container project">
+      <section class="grid-row grid-full project">
+        <div class="grid-col ">
+          <a href="../" class="back-link">Back to home page</a>
+          <h1>Helping prisons capture accurate court case and sentence information</h1>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col ">
+            <p class="lede">The Remand and sentencing service is used by staff in offender management units to record
+              and manage complex court case and sentencing information.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/ras-court-cases-page.png" alt="Overview of a prisoner's court cases and appearances">
+            </figure>
+            <p class="img-caption">The Court cases page showing the most recent court case.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-court-cases">Show full size</button>
+            <dialog class="img-dialog" id="dialog-court-cases" aria-label="Full-size screenshot: Court cases page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Court cases page</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/ras-court-cases-page.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <p>Within prisons, offender management units are responsible for capturing and entering court case, offence
+              and sentencing information from warrants issued by the courts. This information is used to calculate
+              prisoners’ release dates. Accuracy is critical, as incorrectly captured information can lead to
+              miscalculated release dates and, in some cases, releases in error.</p>
+            <p>I led the interaction design for Remand and sentencing, a new service replacing a legacy system used by
+              offender management units to record legally complex court case and sentencing information. The service
+              supports users to enter and manage court case and sentencing information more easily and accurately.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/ras-add-offences-page.png" alt="Adding offences to a court apperance" loading="lazy">
+            </figure>
+            <p class="img-caption">The Court cases page showing the most recent court case.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-add-offences">Show full size</button>
+            <dialog class="img-dialog" id="dialog-add-offences" aria-label="Full-size screenshot: Court cases page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Add offences page</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/ras-add-offences-page.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/ras-sentence-length.png" alt="Entering sentence length for a sentence">
+            </figure>
+            <p class="img-caption">Entering a sentence length for a sentence.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-sentence-length">Show full size</button>
+            <dialog class="img-dialog" id="dialog-sentence-length"
+              aria-label="Full-size screenshot: Enter the sentence length page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Enter the sentence length</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/ras-sentence-length.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>What I did</h2>
+            <p>Working closely with user researchers, content designers, developers and subject matter experts, I led
+              the interaction design for the service, shaping how complex court case and sentencing information is
+              captured, validated and presented.</p>
+            <ul>
+              <li>Designed end-to-end user journeys and interactions for capturing court case and sentencing information
+                using the GOV.UK and MoJ Design Systems</li>
+              <li>Built a fully working prototype in HTML and JavaScript using the GOV.UK Prototype Kit</li>
+              <li>Worked closely with user research to test and iterate the designs with offender management unit staff
+              </li>
+              <li>Worked with the service designer to run workshops with stakeholders and subject matter experts to
+                explore and agree approaches to complex problems</li>
+              <li>Created a design manual of reusable components and patterns to support the consistent use of court
+                case, sentence and offence information across HMPPS services</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-row grid-full">
+          <div class="grid-col">
+            <figure class="project-img project-img">
+              <img src="../img/ras-miro-snippet.png" alt="Snippet of a user flow taken from Miro" loading="lazy">
+            </figure>
+            <p class="img-caption">Snippet of user flow mapping from Miro.</p>
+            <a class="img-expand" href="https://miro.com/app/board/uXjVGQhPjiM=/?share_link_id=16077879165"
+              target="_blank">Open full user flows in Miro (opens in new tab)</a>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>Outcome</h2>
+            <p>The service was tested with offender management unit staff throughout alpha and performed well. This gave
+              the team and stakeholders within HMPPS confidence in the design.</p>
+            <p>The work progressed to a private beta, with the designs and prototype used to support onward delivery.
+            </p>
+            <p>Design components and patterns developed as part of the service are being used across Ministry of Justice
+              services, supporting consistency in how court case and sentence information is presented.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/ras-design-manual-offence-card.png" alt="Remand and sentencing Offence card component"
+                loading="lazy">
+            </figure>
+            <p class="img-caption">The offence card component in the Remand and sentencing Design manual.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-offence-card">Show full size</button>
+            <dialog class="img-dialog" id="dialog-offence-card"
+              aria-label="Full-size screenshot: Offence card design component">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Offence card component</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/ras-design-manual-offence-card.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/ras-design-manual-contextual-question.png" alt="Entering sentence length for a sentence">
+            </figure>
+            <p class="img-caption">The Contextual question pattern in the Remand and sentencing Deisgn manual</p>
+            <button class="img-expand" type="button" data-dialog="dialog-contextual-question">Show full size</button>
+            <dialog class="img-dialog" id="dialog-contextual-question"
+              aria-label="Full-size screenshot: Contextual question design pattern">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Contextual question pattern</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/ras-design-manual-contextual-question.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </section>
+
+      <hr class="hr-small">
+
+      <section class="other-projects">
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h3>Other projects</h3>
+            <ul>
+              <li><a href="hmpps-calculate-release-dates.html">Improving calculations in prisons</a></li>
+              <li><a href="nhs-redesign.html">Redesigning the NHS website</a></li>
+              <li><a href="nhs-ia.html">Making it easier to find information on NHS.UK</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+
+
+  </main>
+  <footer>
+    <div class="grid-container">
+      <section class="grid-row grid-1-1">
+        <div class="grid-col">
+
+          <ul>
+            <!-- <li><a href="">Ethics</a></li> -->
+            <li><a href="../privacy.html">Privacy</a></li>
+            <li><a href="../accessibility-statement.html">Accessibility statement</a></li>
+          </ul>
+
+          <p>Company registered in England and Wales with company number 11724887.</p>
+          <p>&copy; 2025 Ashley Wheat Design Ltd.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const openers = document.querySelectorAll('.img-expand');
+
+      openers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const dialogId = btn.getAttribute('data-dialog');
+          const dialog = document.getElementById(dialogId);
+          if (!dialog) return;
+
+          dialog._opener = btn;
+          dialog.showModal();
+
+          // Lock background scroll
+          document.body.classList.add('dialog-open');
+
+          const closeBtn = dialog.querySelector('.img-dialog__close');
+          if (closeBtn) closeBtn.focus();
+        });
+      });
+
+      document.querySelectorAll('.img-dialog').forEach(dialog => {
+        const close = () => {
+          dialog.close();
+
+          // Unlock background scroll
+          document.body.classList.remove('dialog-open');
+
+          if (dialog._opener) dialog._opener.focus();
+        };
+
+        const closeBtn = dialog.querySelector('.img-dialog__close');
+        if (closeBtn) closeBtn.addEventListener('click', close);
+
+        dialog.addEventListener('click', (e) => {
+          // click outside frame closes (when clicking the backdrop area)
+          if (e.target === dialog) close();
+        });
+
+        dialog.addEventListener('cancel', close); // ESC
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>

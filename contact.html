@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Wheat – User Centred Design</title>
+  <meta name="description"
+    content="Ashley Wheat is a User Centred Design consultant specialising in accessible, inclusive UX, research-led design, and ethical digital practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+
+  <!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Android / PWA -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Theme colour -->
+<meta name="theme-color" content="#A34232">
+<meta name="msapplication-TileColor" content="#A34232">
+</head>
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (isOpen) {
+        const firstLink = nav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        toggle.focus();
+      }
+    });
+  })();
+</script>
+
+<body>
+
+  <header>
+    <div class="grid-container">
+      <section class="grid-row grid-1-2">
+        <div class="grid-col">
+          <a class="logo" href="/">Ashley Wheat</a>
+        </div>
+        <div class="grid-col header-right">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="/#selected-work">Selected work</a></li>
+              <li><a href="/#what-i-do">What I do</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu toggle -->
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <article class="grid-container page red">
+      <section class="grid-row grid-full">
+        <div class="grid-col ">
+        <h1>Interested in working together?</h1>
+        </div>
+        <div class="grid-row grid-2-3">
+          <div class="grid-col ">
+            <p class="large-p">Let's keep this simple and get to know each other better.</p>
+            <p class="large-p">To discuss a project you can:</p>
+            <p class="large-p"><a href="https://calendar.app.google/rkgMizJoNU3smBKS7" target="_blank"><strong>Book an intro call</strong></a> or <a href="mailto:ashley@ashleywheat.design
+?subject=Project%20enquiry
+&body=Hi%20Ashley%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project.%0A%0AProject%20summary%3A%0ATimeline%3A%0ABudget%20range%3A%0A%0AThanks%2C%0A[Your name]"><strong>email me</strong></a>.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3">
+          <div class="grid-col ">
+            <h2>Things to consider</h2>
+            <p class="large-p">Before we have a call or you send me an email, it might be useful for you to think about:</p>
+            <ul class="red">
+              <li>Your goals</li>
+              <li>Who the users are</li>
+              <li>Current challenges</li>
+              <li>Your budget and scope</li>
+              <li>Timelines and deadlines</li>
+              <li>Who will be working on the project</li>
+            </ul>
+          </div>
+        </div>
+    </article>
+
+
+  </main>
+  <footer>
+    <div class="grid-container">
+      <section class="grid-row grid-1-1">
+        <div class="grid-col"> 
+             
+          <ul> 
+            <!-- <li><a href="">Ethics</a></li> -->
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="accessibility-statement.html">Accessibility statement</a></li>
+          </ul>
+          
+          <p>Company registered in England and Wales with company number 11724887.</p>
+          <p>&copy; 2025 Ashley Wheat Design Ltd.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>

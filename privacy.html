@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Wheat – User Centred Design</title>
+  <meta name="description"
+    content="Ashley Wheat is a User Centred Design consultant specialising in accessible, inclusive UX, research-led design, and ethical digital practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+
+  <!-- Favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Android / PWA -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Theme colour -->
+<meta name="theme-color" content="#A34232">
+<meta name="msapplication-TileColor" content="#A34232">
+</head>
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (isOpen) {
+        const firstLink = nav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        toggle.focus();
+      }
+    });
+  })();
+</script>
+
+<body>
+
+  <header>
+    <div class="grid-container">
+      <section class="grid-row grid-1-2">
+        <div class="grid-col">
+          <a class="logo" href="/">Ashley Wheat</a>
+        </div>
+        <div class="grid-col header-right">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="/#selected-work">Selected work</a></li>
+              <li><a href="/#what-i-do">What I do</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu toggle -->
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <article class="grid-container page">
+      <section class="grid-row grid-full">
+        <div class="grid-col ">
+        <h1>Privacy</h1>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+        <div class="grid-col text-block">
+          <p>I respect your privacy, and want to keep your information safe. I will only store the bare minimum of data about you, with your permissoin and only if I need it.</p>
+          <h2>What data I collect</h2>
+          <p>This website does not collect personal data or analytics.</p>
+          <p>When you contact me by email or by booking a call, I will collect your name, email address, phone numnber and the company you work for.</p>
+          <p>If we do business together, I will also collect your business name and address for invoicing purposes. I will keep records of invoices I send you, and the payments you make.</p>
+          <p>If I buy a product or service from you, I will keep invoices and receipts as well as any relevent email correspodance.</p>
+          <h2>Cookies</h2>
+          <p>This website does not use cookies for advertising or tracking.</p>
+          <h2>Third-party services</h2>
+          <p>If a link on this website or email from me takes you to a third-party website, I am not responsible for the privacy practices of those sites and refer you to their privacy policies.</p>
+          <h2>How your data is stored</h2>
+          <p>Any personal information you choose to share with me (e.g. your email address) is stored securely, and only for as long as necessary.</p>
+          <p>I do not sell, rent or share personal data with any other party.</p>
+          <h2>Your rights</h2>
+          <p>You have the right to ask me what personal data I hold about you. You can also ask for this to be corrected or deleted.</p>
+          <p>If you have any questions abouot your privacy or data I hold, please contact me at <a href="mailto:ashley@ashleywheat.design">ashley@ashleywheat.design</a>.</p>
+          </div>
+          </div>
+    </article>
+
+
+  </main>
+  <footer>
+    <div class="grid-container">
+      <section class="grid-row grid-1-1">
+        <div class="grid-col"> 
+             
+          <ul> 
+            <!-- <li><a href="">Ethics</a></li> -->
+            <li><a href="#">Privacy</a></li>
+            <li><a href="accessibility-statement.html">Accessibility statement</a></li>
+          </ul>
+          
+          <p>Company registered in England and Wales with company number 11724887.</p>
+          <p>&copy; 2025 Ashley Wheat Design Ltd.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>

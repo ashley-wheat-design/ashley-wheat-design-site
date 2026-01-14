@@ -1,0 +1,139 @@
+/* Generated on 2025-09-08 15:51:38 UTC */
+/* Place this fonts.css in your project root and keep a sibling ./fonts directory. */
+/* Usage example: body { font-family: "Mori", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; } */
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-ExtralightItalic.woff2') format('woff2'),
+       url('._PPMori-ExtralightItalic.woff2') format('woff2'),
+       url('PPMori-ExtralightItalic.woff') format('woff'),
+       url('._PPMori-ExtralightItalic.woff') format('woff'),
+       url('PPMori-ExtralightItalic.ttf') format('truetype'),
+       url('._PPMori-ExtralightItalic.ttf') format('truetype'),
+       url('PPMori-ExtralightItalic.otf') format('opentype'),
+       url('._PPMori-ExtralightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-Extralight.woff2') format('woff2'),
+       url('._PPMori-Extralight.woff2') format('woff2'),
+       url('PPMori-Extralight.woff') format('woff'),
+       url('._PPMori-Extralight.woff') format('woff'),
+       url('PPMori-Extralight.ttf') format('truetype'),
+       url('._PPMori-Extralight.ttf') format('truetype'),
+       url('PPMori-Extralight.otf') format('opentype'),
+       url('._PPMori-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-BookItalic.woff2') format('woff2'),
+       url('PPMori-RegularItalic.woff2') format('woff2'),
+       url('._PPMori-BookItalic.woff2') format('woff2'),
+       url('._PPMori-RegularItalic.woff2') format('woff2'),
+       url('PPMori-RegularItalic.woff') format('woff'),
+       url('PPMori-BookItalic.woff') format('woff'),
+       url('._PPMori-RegularItalic.woff') format('woff'),
+       url('._PPMori-BookItalic.woff') format('woff'),
+       url('PPMori-BookItalic.ttf') format('truetype'),
+       url('PPMori-RegularItalic.ttf') format('truetype'),
+       url('._PPMori-BookItalic.ttf') format('truetype'),
+       url('._PPMori-RegularItalic.ttf') format('truetype'),
+       url('PPMori-BookItalic.otf') format('opentype'),
+       url('PPMori-RegularItalic.otf') format('opentype'),
+       url('._PPMori-BookItalic.otf') format('opentype'),
+       url('._PPMori-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-Book.woff2') format('woff2'),
+       url('PPMori-Regular.woff2') format('woff2'),
+       url('._PPMori-Book.woff2') format('woff2'),
+       url('._PPMori-Regular.woff2') format('woff2'),
+       url('PPMori-Book.woff') format('woff'),
+       url('PPMori-Regular.woff') format('woff'),
+       url('._PPMori-Book.woff') format('woff'),
+       url('._PPMori-Regular.woff') format('woff'),
+       url('PPMori-Book.ttf') format('truetype'),
+       url('PPMori-Regular.ttf') format('truetype'),
+       url('._PPMori-Book.ttf') format('truetype'),
+       url('._PPMori-Regular.ttf') format('truetype'),
+       url('PPMori-Regular.otf') format('opentype'),
+       url('PPMori-Book.otf') format('opentype'),
+       url('._PPMori-Regular.otf') format('opentype'),
+       url('._PPMori-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-SemiBoldItalic.woff2') format('woff2'),
+       url('._PPMori-SemiBoldItalic.woff2') format('woff2'),
+       url('PPMori-SemiBoldItalic.woff') format('woff'),
+       url('._PPMori-SemiBoldItalic.woff') format('woff'),
+       url('PPMori-SemiBoldItalic.ttf') format('truetype'),
+       url('._PPMori-SemiBoldItalic.ttf') format('truetype'),
+       url('PPMori-SemiBoldItalic.otf') format('opentype'),
+       url('._PPMori-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-SemiBold.woff2') format('woff2'),
+       url('._PPMori-SemiBold.woff2') format('woff2'),
+       url('PPMori-SemiBold.woff') format('woff'),
+       url('._PPMori-SemiBold.woff') format('woff'),
+       url('PPMori-SemiBold.ttf') format('truetype'),
+       url('._PPMori-SemiBold.ttf') format('truetype'),
+       url('PPMori-SemiBold.otf') format('opentype'),
+       url('._PPMori-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-ExtraBoldItalic.woff2') format('woff2'),
+       url('._PPMori-ExtraBoldItalic.woff2') format('woff2'),
+       url('PPMori-ExtraBoldItalic.woff') format('woff'),
+       url('._PPMori-ExtraBoldItalic.woff') format('woff'),
+       url('PPMori-ExtraBoldItalic.ttf') format('truetype'),
+       url('._PPMori-ExtraBoldItalic.ttf') format('truetype'),
+       url('PPMori-ExtraBoldItalic.otf') format('opentype'),
+       url('._PPMori-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('PPMori-ExtraBold.woff2') format('woff2'),
+       url('._PPMori-ExtraBold.woff2') format('woff2'),
+       url('PPMori-ExtraBold.woff') format('woff'),
+       url('._PPMori-ExtraBold.woff') format('woff'),
+       url('PPMori-ExtraBold.ttf') format('truetype'),
+       url('._PPMori-ExtraBold.ttf') format('truetype'),
+       url('PPMori-ExtraBold.otf') format('opentype'),
+       url('._PPMori-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

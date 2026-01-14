@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Wheat – User Centred Design</title>
+  <meta name="description"
+    content="Ashley Wheat is a User Centred Design consultant specialising in accessible, inclusive UX, research-led design, and ethical digital practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Android / PWA -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Theme colour -->
+  <meta name="theme-color" content="#A34232">
+  <meta name="msapplication-TileColor" content="#A34232">
+</head>
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (isOpen) {
+        const firstLink = nav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        toggle.focus();
+      }
+    });
+  })();
+</script>
+
+<body>
+
+  <header>
+    <div class="grid-container">
+      <section class="grid-row grid-1-2">
+        <div class="grid-col">
+          <a class="logo" href="../">Ashley Wheat</a>
+        </div>
+        <div class="grid-col header-right">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="../#selected-work">Selected work</a></li>
+              <li><a href="../#what-i-do">What I do</a></li>
+              <li><a href="../#about">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu toggle -->
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <article class="grid-container project">
+      <section class="grid-row grid-full project">
+        <div class="grid-col ">
+          <a href="../" class="back-link">Back to home page</a>
+          <h1>Improving calculations in prisons</h1>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col ">
+            <p class="lede">The Calculate release dates service replaces manual, paper-based release date calculations
+              in prisons, reducing the risk of error and saving staff time.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-full project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/crds-review-calculation.png"
+                alt="Overview of the calculated release dates including a calculation breakdown">
+            </figure>
+            <p class="img-caption">The Review calculation page showing the release dates calculated by the service,
+              including a breakdown of how they were reached.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-review-calc">Show full size</button>
+            <dialog class="img-dialog" id="dialog-review-calc"
+              aria-label="Full-size screenshot: Review calculation page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Review calculation page</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/crds-review-calculation.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <p>Calculate release dates is used by offender management unit staff in prisons to calculate prisoners’
+              release dates based on court case and sentencing information.</p>
+            <p>Prior to the service, release date calculations were carried out manually using paper-based processes.
+              Staff were required to interpret complex sentencing information, apply sentencing rules, and carry out
+              multiple checks by hand, often across different systems and documents.</p>
+            <p>Given the complexity of sentencing rules and the reliance on paper-based processes in a high-pressure
+              environment, there was a risk of errors in release date calculations, which could lead to prisoners being
+              released in error.</p>
+            <p>I led the interaction design for the Calculate release dates, designing the end-to-end service used by
+              staff to review sentence and offence information and automatically calculate accurate release dates.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/crds-check-sentence-and-offence-info.png"
+                alt="Overview of sentence and offence information to be used in a calculation">
+            </figure>
+            <p class="img-caption">The Check sentence and offence information page showing information to be used in a
+              calculation.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-check-sentence-info">Show full size</button>
+            <dialog class="img-dialog" id="dialog-check-sentence-info"
+              aria-label="Full-size screenshot: Check sentence and offence information page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Check sentrence and offence information page</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/crds-check-sentence-and-offence-info.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/crds-sds-plus-iteration.jpg"
+                alt="A screenshot of a whiteboard showing how the SDS plus journey was iterated. The board shows old designs, user research findings and new designs with annotated changes.">
+            </figure>
+            <p class="img-caption">A screenshot of a whiteboard showing how the SDS plus journey was iterated following
+              user research.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-sds-iteration">Show full size</button>
+            <dialog class="img-dialog" id="dialog-sds-iteration"
+              aria-label="Full-size screenshot: Iterating the SDS plus journey">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Iterating the SDS plus journey</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/crds-sds-plus-iteration.jpg" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+
+
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>What I did</h2>
+            <p>Working closely with user researchers, content designers, developers and subject matter experts, I led
+              the interaction design for the service, shaping how complex sentencing information is reviewed and how
+              automated release date calculations are presented.</p>
+            <ul>
+              <li>Designed the core user journeys and interactions for reviewing sentence and offence information and
+                calculating release dates, using the GOV.UK and MoJ Design Systems</li>
+              <li>Shaped the service around transparency and trust, making it clear how sentence information contributes
+                to the final calculated release dates</li>
+              <li>Designed detailed calculation breakdowns to help users understand, check and verify how outcomes had
+                been reached</li>
+              <li>Worked with the service designer, user researchers and content designers to run a design sprint
+                exploring problems with court case and sentence information held in a legacy system</li>
+              <li>Helped identify that Calculate release dates relied on accurate court case data entered upstream,
+                shaping the strategy for a wider programme of services including Remand and sentencing, Adjustments and
+                Recalls</li>
+              <li>Ran workshops with stakeholders and subject matter experts to redesign release date notification slips
+                given to prisoners, focusing on using plain language and helping prisoners with accessibility needs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/crds-notification-slip-redesign-small.png"
+                alt="Cropped image taken from a whiteboard shopwing part of a workshop redesigning prisoner release date notification slips.">
+            </figure>
+            <p class="img-caption">A screenshot of a whiteboard showing a workshop held with stakeholders for the
+              redesign of prisoner release date notification slips.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-notification-slip-workshop">Show full
+              size</button>
+            <dialog class="img-dialog" id="dialog-notification-slip-workshop"
+              aria-label="Full-size screenshot: Check sentence and offence information page">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">A workshop to redesign release date notification slips</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/crds-notification-slip-redesign-small.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero">
+              <img src="../img/crds-notifactaion-slip-designs.jpg"
+                alt="Examples of redesigned release date notification slips.">
+            </figure>
+            <p class="img-caption">Examples of redesigned release date notification slips.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-notification-slips">Show full size</button>
+            <dialog class="img-dialog" id="dialog-notification-slips"
+              aria-label="Full-size screenshot: Iterating the SDS plus journey">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Examples of redesigned release date notification slips</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/crds-notifactaion-slip-designs.jpg" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>Outcome</h2>
+            <div class="inset-text">
+              Calculate release dates is an award-winning service and has been recognised as one of the CDDO Top 75
+              digital services across government.
+            </div>
+            <p>As of May 2022, Calculate release dates had supported over 79,000 release date recalculations, saving an
+              estimated 761 days of staff time and helping prevent 92 potential releases in error.</p>
+            <p>The service was rolled out at scale earlier than expected across the prison estate, becoming a critical
+              tool supporting early release schemes introduced as part of SDS40 and SDS50.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <hr class="hr-small">
+
+      <section class="other-projects">
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h3>Other projects</h3>
+            <ul>
+              <li><a href="hmpps-remand-and-sentencing.html">Helping prisons capture accurate court case and sentence
+                  information</a></li>
+              <li><a href="nhs-redesign.html">Redesigning the NHS website</a></li>
+              <li><a href="nhs-ia.html">Making it easier to find information on NHS.UK</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="grid-container">
+      <section class="grid-row grid-1-1">
+        <div class="grid-col">
+
+          <ul>
+            <!-- <li><a href="">Ethics</a></li> -->
+            <li><a href="../privacy.html">Privacy</a></li>
+            <li><a href="../accessibility-statement.html">Accessibility statement</a></li>
+          </ul>
+
+          <p>Company registered in England and Wales with company number 11724887.</p>
+          <p>&copy; 2025 Ashley Wheat Design Ltd.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const openers = document.querySelectorAll('.img-expand');
+
+      openers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const dialogId = btn.getAttribute('data-dialog');
+          const dialog = document.getElementById(dialogId);
+          if (!dialog) return;
+
+          dialog._opener = btn;
+          dialog.showModal();
+
+          // Lock background scroll
+          document.body.classList.add('dialog-open');
+
+          const closeBtn = dialog.querySelector('.img-dialog__close');
+          if (closeBtn) closeBtn.focus();
+        });
+      });
+
+      document.querySelectorAll('.img-dialog').forEach(dialog => {
+        const close = () => {
+          dialog.close();
+
+          // Unlock background scroll
+          document.body.classList.remove('dialog-open');
+
+          if (dialog._opener) dialog._opener.focus();
+        };
+
+        const closeBtn = dialog.querySelector('.img-dialog__close');
+        if (closeBtn) closeBtn.addEventListener('click', close);
+
+        dialog.addEventListener('click', (e) => {
+          // click outside frame closes (when clicking the backdrop area)
+          if (e.target === dialog) close();
+        });
+
+        dialog.addEventListener('cancel', close); // ESC
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>

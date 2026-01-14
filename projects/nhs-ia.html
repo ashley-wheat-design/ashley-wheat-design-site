@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Wheat – User Centred Design</title>
+  <meta name="description"
+    content="Ashley Wheat is a User Centred Design consultant specialising in accessible, inclusive UX, research-led design, and ethical digital practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../fonts/fonts.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Android / PWA -->
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Theme colour -->
+  <meta name="theme-color" content="#A34232">
+  <meta name="msapplication-TileColor" content="#A34232">
+</head>
+<script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+      if (isOpen) {
+        const firstLink = nav.querySelector('a');
+        if (firstLink) firstLink.focus();
+      } else {
+        toggle.focus();
+      }
+    });
+  })();
+</script>
+
+<body>
+
+  <header>
+    <div class="grid-container">
+      <section class="grid-row grid-1-2">
+        <div class="grid-col">
+          <a class="logo" href="../">Ashley Wheat</a>
+        </div>
+        <div class="grid-col header-right">
+          <nav id="primary-nav">
+            <ul>
+              <li><a href="../#selected-work">Selected work</a></li>
+              <li><a href="../#what-i-do">What I do</a></li>
+              <li><a href="../#about">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu toggle -->
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+          </button>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <article class="grid-container project">
+      <section class="grid-row grid-full project">
+        <div class="grid-col ">
+          <a href="../" class="back-link">Back to home page</a>
+          <h1>Making it easier to find information on NHS.UK</h1>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col ">
+            <p class="lede">Improving the information architecture of NHS.UK to make it easier for people to find health
+              and service information.</p>
+          </div>
+        </div>
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero project-img--hero project-img--hero--wide">
+              <img src="../img/nhsia-pregnancy-finding.png"
+                alt="Finding from usability testing of navigational components on the pregnancy section of NHS.UK">
+            </figure>
+            <p class="img-caption">Findings from usability testing of the pregnancy section of the NHS website.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-pregnancy">Show full size</button>
+            <dialog class="img-dialog" id="dialog-pregnancy"
+              aria-label="Full-size screenshot: Usability testing finding for pregnancy">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Usability testing finding</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/nhsia-pregnancy-finding.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero project-img--hero project-img--hero--wide">
+              <img src="../img/nhsia-card-sort-finding.png" alt="NHS.UK homepage">
+            </figure>
+            <p class="img-caption">Findings from a card sort conducted with 944 people online.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-card-sort">Show full size</button>
+            <dialog class="img-dialog" id="dialog-card-sort" aria-label="Full-size screenshot: Card sort finding">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Card sort finding</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/nhsia-card-sort-finding.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <p>NHS.UK provides trusted health information and guidance to millions of people across the UK and
+              worldwide. As the site grew over time, information became more difficult to find and navigation more
+              complex. Users struggled to find health and service information quickly and easily, sometimes when they
+              needed it most.</p>
+            <p>This work focused on improving the underlying information architecture of the NHS website, understanding
+              how users expect to find information and how their mental models shape navigation. This enabled the design
+              of new ways of helping all users, including those with accessibility needs, to navigate NHS.UK, find
+              health information, access services and complete transactional journeys.</p>
+          </div>
+        </div>
+
+        <div class="grid-row grid-1-2-1-2 project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero project-img--hero--wide">
+              <img src="../img/nhsia-top-tasks-poster.jpg" alt="Top tasks on NHS.UK">
+            </figure>
+            <p class="img-caption">Top tasks on NHS.UK.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-top-tasks">Show full size</button>
+            <dialog class="img-dialog" id="dialog-top-tasks" aria-label="Full-size screenshot: Top tasks on NHS.UK">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Top tasks on NHS.UK</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/nhsia-top-tasks-poster.jpg" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <div class="grid-col">
+            <figure class="project-img project-img--hero project-img--hero project-img--hero--wide">
+              <img src="../img/nhsia-card-sort.jpg"
+                alt="A photo of physical cards from a card sort of information on the NHS website.">
+            </figure>
+            <p class="img-caption">A card sort of information on the NHS website.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-card-sort">Show full size</button>
+            <dialog class="img-dialog" id="dialog-card-sort"
+              aria-label="Full-size screenshot: A card sort of information on the NHS website">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">A card sort of information on the NHS website</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/nhsia-card-sort.jpg" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        </div>
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>What I did</h2>
+            <p>I led user research as part of the NHS.UK design team, focusing on how people find and navigate health
+              and service information.</p>
+            <ul>
+              <li>Led regular usability research to explore navigation, findability and content structure across NHS.UK,
+                based on users’ top tasks</li>
+              <li>Worked closely within the design team to iterate navigational components, taxonomy and labelling based
+                on research findings from usability studies, card sorting and tree testing</li>
+              <li>Collaborated with an external consultancy to develop an information architecture toolkit to support
+                ongoing improvements to NHS.UK</li>
+              <li>Carried out usability research focused on the pregnancy section of the NHS website, testing
+                navigational components and patterns in depth</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-row grid-full project-img-row">
+          <div class="grid-col">
+            <figure class="project-img project-img--hero project-img--hero--wide">
+              <img src="../img/nhsia-tree-test.png"
+                alt="Results from a task in an online tree test on the NHS.UK navigation.">
+            </figure>
+            <p class="img-caption">Results from a task in an online tree test on the NHS.UK navigation.</p>
+            <button class="img-expand" type="button" data-dialog="dialog-tree-test">Show full size</button>
+            <dialog class="img-dialog" id="dialog-tree-test" aria-label="Full-size screenshot: Tree test findings">
+              <div class="img-dialog__frame">
+                <div class="img-dialog__bar">
+                  <p class="img-dialog__title">Tree test findings</p>
+                  <button class="img-dialog__close" type="button">Close</button>
+                </div>
+
+                <div class="img-dialog__body">
+                  <img src="../img/nhsia-tree-test.png" alt="">
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h2>Outcome</h2>
+            <p>The information architecture work informed ongoing improvements to NHS.UK, helping people find and
+              navigate health and service information more easily.</p>
+            <p>The navigational components and patterns developed through this work supported further IA activity across
+              NHS.UK, providing teams with a clearer, research-led way to evolve navigation and content structure.</p>
+            <p>This contributed to a more consistent and accessible approach to organising information and services on
+              NHS.UK, grounded in user needs.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <hr class="hr-small">
+
+      <section class="other-projects">
+        <div class="grid-row grid-2-3-1-3">
+          <div class="grid-col">
+            <h3>Other projects</h3>
+            <ul>
+              <li><a href="hmpps-remand-and-sentencing.html">Helping prisons capture accurate court case and sentence
+                  information</a></li>
+              <li><a href="hmpps-calculate-release-dates.html">Improving calculations in prisons</a></li>
+              <li><a href="nhs-redesign.html">Redesigning the NHS website</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+
+  </main>
+  <footer>
+    <div class="grid-container">
+      <section class="grid-row grid-1-1">
+        <div class="grid-col">
+
+          <ul>
+            <!-- <li><a href="">Ethics</a></li> -->
+            <li><a href="../privacy.html">Privacy</a></li>
+            <li><a href="../accessibility-statement.html">Accessibility statement</a></li>
+          </ul>
+
+          <p>Company registered in England and Wales with company number 11724887.</p>
+          <p>&copy; 2025 Ashley Wheat Design Ltd.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const openers = document.querySelectorAll('.img-expand');
+
+      openers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const dialogId = btn.getAttribute('data-dialog');
+          const dialog = document.getElementById(dialogId);
+          if (!dialog) return;
+
+          dialog._opener = btn;
+          dialog.showModal();
+
+          // Lock background scroll
+          document.body.classList.add('dialog-open');
+
+          const closeBtn = dialog.querySelector('.img-dialog__close');
+          if (closeBtn) closeBtn.focus();
+        });
+      });
+
+      document.querySelectorAll('.img-dialog').forEach(dialog => {
+        const close = () => {
+          dialog.close();
+
+          // Unlock background scroll
+          document.body.classList.remove('dialog-open');
+
+          if (dialog._opener) dialog._opener.focus();
+        };
+
+        const closeBtn = dialog.querySelector('.img-dialog__close');
+        if (closeBtn) closeBtn.addEventListener('click', close);
+
+        dialog.addEventListener('click', (e) => {
+          // click outside frame closes (when clicking the backdrop area)
+          if (e.target === dialog) close();
+        });
+
+        dialog.addEventListener('cancel', close); // ESC
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>
